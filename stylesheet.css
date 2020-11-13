@@ -19,6 +19,43 @@ a {
 }
 
 /* ここからCSSを書いていきましょう */
+header {
+  background-color:rgba(34,49,52,0.9);
+  height:65px;
+  width:100%;
+  position:fixed;
+  top:0;
+  z-index:10;
+}
+
+.header-wrapper {
+  width:1170px;
+  margin:0 auto;
+}
+
+.header-logo {
+  width:124px;
+  margin-top:20px;
+  float:left;
+}
+
+.header-right {
+  float:right;
+  background-color:rgba(255,255,255,0.3);
+  transition:all 0.5s;
+}
+
+.header-right:hover {
+  background-color:rgba(255,255,255,0.5);
+}
+
+.header-right a {
+  color:white;
+  line-height:65px;
+  padding:0 25px;
+  display:block;
+}
+
 .top-wrapper {
   background-image:url(https://prog-8.com/images/html/advanced/top.png);
   background-size:cover;
@@ -39,16 +76,16 @@ h1 {
   opacity:0.7;
 }
 
-p {
+.container p {
   margin-bottom:15px;
   opacity:0.7;
 }
+
 
 .btn {
   color:white;
   display: inline-block;
   opacity:0.8;
-  padding:8px 24px;
   border-radius: 4px;
 }
 
@@ -60,13 +97,94 @@ p {
   margin-top:15px;
   margin-bottom:15px;
   background-color:#239b76;
+  padding:8px 24px;
 }
 
 .facebook {
   background-color:#3b5998;
   margin-right:10px;
+  padding:8px 24px;
 }
 
 .twitter {
   background-color:#55acee;
+  padding:8px 24px;
+}
+
+.contents-wrapper {
+  height:580px;
+  background-color:#f7f7f7;
+}
+
+.contents-container {
+  width:1170px;
+  margin:0 auto;
+  text-align:center;
+}
+
+h2 {
+  color:#5f5d60;
+  padding-top:80px;
+  font-weight:normal;
+}
+
+h3 {
+  color:#5f5d60;
+}
+
+.content {
+  width:25%;
+  float:left;
+  padding-top:50px;
+}
+
+.c-icon {
+  position: relative;
+}
+
+.c-icon-text {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color:white;
+}
+
+.c-text {
+  width:80%;
+  font-size:13px;
+  color:#b3aeb5;
+  display: inline-block;
+  margin-top:15px;
+}
+
+.message-wrapper {
+  text-align:center;
+}
+
+.develop {
+  background-color:#5dca88;
+  padding:15px 40px;
+  box-shadow:0 7px #1a7940;
+  margin:50px 0 80px 0 ;
+}
+
+.develop:active {
+  box-shadow:none;
+  position:relative;
+  top:7px;
+}
+
+.footer-wrapper {
+  width:1170px;
+  margin:0 auto;
+  padding:30px 0;
+  border-top: 1px solid #eee;
+}
+.footer-logo img{
+  width:124px;
+}
+
+footer p{
+  color: #b3aeb5;
+  font-size: 12px;
 }
