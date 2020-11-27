@@ -67,3 +67,4 @@ $html .= 	'<p><textarea rows="8">' . $header . '</textarea></p>' ;
 
 // HTMLを出力
 echo $html ;
+?>
