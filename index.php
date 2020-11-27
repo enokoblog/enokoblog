@@ -53,7 +53,15 @@ $header = substr( $res1, 0, $res2['header_size'] ) ;	// レスポンスヘッダ
 // JSONを変換
 // $obj = json_decode( $json ) ;	// オブジェクトに変換
 // $arr = json_decode( $json, true ) ;	// 配列に変換
-
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PHPのテストだよ</title>
+  </head>
+  <body>
+<?php
 // HTML用
 $html = '' ;
 
@@ -68,3 +76,5 @@ $html .= 	'<p><textarea rows="8">' . $header . '</textarea></p>' ;
 // HTMLを出力
 echo $html ;
 ?>
+  </body>
+</html>
